@@ -1,0 +1,201 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 12px;
+  background-color: #8F98A9;
+  font-family: Arial, serif;
+  font-family: 'Raleway', sans-serif;
+}
+h1, h2{
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+h3 {
+  font-size: 1rem;
+}
+header {
+  height: 50%;
+
+}
+aside {
+  height: 50%;
+  transform: translateY(-50%);
+}
+.navbar {
+  background-color: #2B353E;
+  height: 40%;
+}
+.secao-corpo{
+  height: 100%;
+  border-top: 1px solid grey;
+}
+.secao-corpo h2:first-child{
+  padding-bottom: 5%;
+  border-bottom: 1px solid white;
+}
+#foto-principal {
+  width: 150px;
+  border-radius: 100%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
+  z-index: 3;
+}
+#info {
+  transform: translateY(-25%);
+}
+#collapse-navbar{
+ background-color: #2B353E;
+}
+#experiencia-profissional {
+  height: 210%;
+}
+.hobbie-icon {
+  margin-top: 10%;
+  height: 50px;
+}
+#hobbies h2 {
+  margin-top: 5%;
+  border-bottom: 1px solid white;
+  padding-bottom: 3%;
+}
+#info h1, #info p  {
+  text-align: center;
+}
+.rede-social img {
+  padding: 5px;
+}
+
+
+
+
+
+
+@media (min-width: 992px) {
+.navbar {
+  background-color: #2B353E;
+}
+.navbar {
+  background-color: #2B353E;
+  height: 50%;
+}
+  .secao-corpo{
+    float: left;
+  }
+  .navbar {
+    margin: 0;
+  }
+  header {
+    background-color: #2B353E;
+    height: 10%;
+  }
+  aside{
+    float: left;
+    width: 360px;
+    height: 90%;
+    transform: translate(0,0);
+    position: relative;
+    color: white;
+    float: left;
+    background-color: #2B353E;
+  }
+  #info {
+  width: 400px;
+  transform: translateY(0);
+}
+#hobbies {
+  width: 400px;
+}
+#foto-principal {
+  width: 150px;
+  border-radius: 100%;
+  margin-left: 50%;
+  transform: translateX(-80%);
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+/*       Barras de Skills animadas           */
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:5px;
+  width:100%;
+  background: rgba(255,255,255,0.5);
+  height:15px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.
+  border-radius:3px;
+  -moz-border-radius:3px;4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.3s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+  z-index: -1;
+}
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:10px;
+  font-weight:bold;
+  font-size:9px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 10px;
+  height: 15px;
+  line-height:10px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+.skillbar-bar {
+  height:15px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:10px;
+  line-height:10px;
+  color: black;
+}

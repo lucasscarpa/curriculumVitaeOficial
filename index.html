@@ -2,27 +2,216 @@
 <html>
 <head>
 	<title>Lucas Abrunhoza Scarpa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
-<body>
-	<header>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div id="secao-principal">
-					<img id="foto-principal" src="img/minha-foto.jpg">
+<header>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+			<a class="rede-social" href="https://linkedin.com" target="_blank"><img src="img/linkedin.png" alt="Ícone perfil  de lucas scarpa no linkedin"></a>
+			<a class="rede-social"  href="https://facebook.com" target="_blank"><img src="img/facebook.png" alt="Ícone perfil de lucas scarpa no facebook"></a>
+			
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="collapse-navbar">
+			<ul class="nav navbar-nav">
+				<li><a href="#graduacao">Graduação</a></li>
+				<li><a href="#cursos-complementares">Cursos Complementares</a></li>
+				<li><a href="#experiencia-profissional">Experiência Profissional</a></li>
+				<li><a href="#habilidades">Habilidades</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<aside>
+	<div class="container">
+		<div id="info">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<img id="foto-principal" src="img/minha-foto.jpg" alt="Foto de Lucas Scarpa" class="foto-principal" >
+					<h1>Lucas Scarpa</h1>		
+					<p>Engenheiro de Computação</p>
 				</div>
 			</div>
-		</nav>
-		<section id="detalhes">
-			<h1>Lucas Abrunhoza Scarpa</h1>		
-			<p>Engenheiro de Computação</p>
-			<h2>Detalhes</h2>
-		</section>
-	</header>
-	<body>
-		
-	</body>
-	<script type="text/javascript" src="assets/jquery/jquery-3.2.1.min.js"></script>
+			<div class="row">
+				<div class="descricao-detalhe col-xs-5 col-sm-5">
+					<h3>Nome completo:</h3>
+					<h3>Telefone:</h3>
+					<h3>E-mail:</h3>
+					<h3>Data Nascimento:</h3>
+				</div>
+				<div class="descricao-detalhe col-xs-7 col-sm-7">
+					<h3>Lucas Abrunhoza Scarpa</h3>
+					<h3>(12) 98195-4656</h3>
+					<h3><a>lucasabrunhoza@gmail.com</a></h3>
+					<h3>26/05/1992</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12" >
+					<h2>Hobbies</h2>
+				</div>
+				<div class="icons-hobbies col-xs-3 col-sm-3 col-md-6">
+					<img class="hobbie-icon" src="img/chef.png" alt="">
+				</div>
+				<div class="icons-hobbies col-xs-3 col-sm-3 col-md-6">
+					<img class="hobbie-icon" src="img/bicycle.png" alt="">
+				</div>
+				<div class="icons-hobbies col-xs-3 col-sm-3 col-md-6">
+					<img class="hobbie-icon" src="img/gamepad.png" alt="">
+				</div>
+				<div class="icons-hobbies col-xs-3 col-sm-3 col-md-6">
+					<img class="hobbie-icon" src="img/map.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+<body>
+	<section id ="sobre" class="secao-corpo col-md-8">
+		<div class="container">
+			<h2>Sobre Mim</h2>
+			<p>Nascido e criado na praia</p>
+			<p>Recém apaixonado por Front-End</p>
+			<h2>Objetivo Profissional</h2>
+			<p>Trabalhar em uma empresa onde possa colocar em prática meus conhecimentos e o desejo de aprender e dedicar-me à função, visando sempre o compromisso, responsabilidade e honestidade com clientes e colegas de trabalho. Podendo assim adquirir cada vez mais conhecimento e experiência no setor de TI.</p>
+			<p>Fácil adaptação e trabalho em grupo.</p>
+		</div>
+	</section>
+	<section id="graduacao" class="secao-corpo">
+		<div class="container">
+			<h2>Graduação</h2>
+			<h3 class="instituicao">Universidade Santa Cecília<span class="data"> Jan/10 - Dez/14</span></h3>
+			<h4>Engenharia da Computação</h4>
+			<p>Conhecimento e habilidades específicas no projeto e desenvolvimento e aplicação de sistemas informatizados, desde o estudo e especificação dos materiais, Gestão de TI, software e hardware, integrando-os nos equipamentos e serviços para os fins desejados.</p>
+		</div>
+	</section>
+	<section id="cursos-complementares" class="secao-corpo ">
+		<div class="container">
+			<h2>Cursos Complementares</h2>
+			<h3 class="instituicao">SENAI<span class="data"> Jul/12</span></h3>
+			<h4>C#</h4>
+			<p>Curso técnico de programação C#</p>
+			<h3 class="instituicao">Tecnoponta<span class="data"> Jan/15</span></h3>
+			<h4>Windows Server</h4>
+			<p>Curso técnico de administração de servidores</p>
+			<h3 class="instituicao">TIexames<span class="data"> Jan/16</span></h3>
+			<h4>ITIL V3</h4>
+			<p>Curso voltado para certificação ITIL V# Foundation</p>
+		</div>
+	</section>
+	<section id="experiencia-profissional" class="secao-corpo ">
+		<div class="container">
+			<h2>Experiência Profissional</h2>
+			<h3>Universidade Santa Cecília<span class="data"> Fev/11 - Dez/11</span></h3>    
+			<h4>Santos-SP</h4>
+			<h5 >Estagiário</h5>
+			<p>Monitoramento do laboratório de eletrônica com a responsabilidade de manter o perfeito funcionamento dos equipamentos e dar auxílio aos alunos para realização de projetos na área de eletrônica.</p>
+
+			<h3>Prefeitura Municipal de Santos<span class="data"> Abr/12 - Abr/14</span></h3>   
+			<h4>Santos-SP</h4>
+			<h5 >Estagiário</h5>
+			<p>Responsável pelo correto funcionamento de todos equipamentos da Secretaria de Desenvolvimento Urbano.</p>
+			<p>Participação no desenvolvimento de projetos críticos de mudança, instalação e otimização da rede.</p>
+			<p>Gerenciamento de estoque de equipamentos.</p>
+			<p>Elaboração de documentos, procedimentos e levantamento de informações para análise.</p>
+
+			<h3>Restaurante Frida<span class="data"> Out/15 - Abr/17</span></h3>  
+			<h4>São Sebastião-SP</h4>
+			<h5 >Proprietário</h5>
+			<p>Responsável por toda a área administrativa relacionada à contratação de funcionários, folha de pagamento, contagem de estoque, compras e contato com fornecedores. Site do restaurante: <a href="http://restaurantefridabar.com.br" target="_blank">www.restaurantefridabar.com.br</a>.</p>
+			<h3>Autodoc Tecnologia<span class="data"> Maio/17 </span></h3>    
+			<h4>São Sebastião-SP</h4>
+			<h5 >Proprietário</h5>
+			<p>Realização da documentação técnica dos softwares e levantamento de requisitos funcionais e não funcionais.</p>
+			<p>Elaboração de manuais de uso para usuários finais e informativos.</p>
+			<p>Vivência em ambiente ágil com metodologia Scrum.</p>
+		</div>
+	</section>
+	<section id ="habilidades" class="secao-corpo">
+		<div class="container">
+			<h2>Habilidades</h2>
+			<section class="skills softwares">
+				<div class="container">
+					<h3>Softwares</h3>
+					<p>HTML5</p>
+					<div class="skillbar clearfix " data-percent="25%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">25%</div>
+					</div>
+					<p>CSS3</p>
+					<div class="skillbar clearfix " data-percent="22%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">22%</div>
+					</div>
+					<p>JavaScript</p>
+					<div class="skillbar clearfix " data-percent="20%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">20%</div>
+					</div>
+					<p>SQL</p>
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div>
+					<p>ITIL</p>
+					<div class="skillbar clearfix " data-percent="50%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">50%</div>
+					</div>      
+				</div>            
+			</section>
+			<section class="sistemas skills">
+				<div class="container">
+					<h3>Sistemas</h3>
+					<p>Windows</p>
+					<div class="skillbar clearfix " data-percent="70%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">70%</div>
+					</div>
+					<p>Linux</p>
+					<div class="skillbar clearfix " data-percent="40%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">40%</div>
+					</div>
+				</div>
+			</section>
+			<section class="language skills">
+				<div class="container">
+					<h3>Idiomas</h3>
+					<p>Inglês</p>
+					<div class="skillbar clearfix " data-percent="60%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">60%</div>
+					</div>
+					<p>Espanhol</p>
+					<div class="skillbar clearfix " data-percent="22%">
+						<div class="skillbar-title" style="background: #333333;"></div>
+						<div class="skillbar-bar" style="background: darkblue;"></div>
+						<div class="skill-bar-percent">22%</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+
+	<script src="assets/jquery/jquery-3.2.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/skillbar.js"></script>
 </body>
 </html>
