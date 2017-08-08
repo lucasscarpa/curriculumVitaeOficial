@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
   width: 100%;
+  max-width: 1326px;
   font-size: 12px;
   background-color: #8F98A9;
   font-family: Arial, serif;
@@ -42,7 +43,6 @@ aside {
   height: 40%;
 }
 .secao-corpo{
-
   height: 100%;
   border-top: 1px solid grey;
 }
@@ -112,6 +112,9 @@ aside {
 
 
 @media (min-width: 768px) {
+  body, html {
+    min-height: 670px;
+  }
     h1{
       font-size: 2.5rem;
     }
@@ -122,22 +125,29 @@ aside {
      font-size: 1.5rem;
    }
    .secao-corpo{
+    width: 60%;
     height: 80%;
     display: none;
   }
   .secao-ativa{
     display: block;
   }
-  .hobbie-icon {
-    display: none;
-  }
-  .hobbie-ativo {
-    display: block;
-  }
-  .icons-hobbies{
-   margin-left: 50%;
-   transform: translateX(-12%);  
-  }
+
+
+#icon-cook {
+  transform: translate(60%,100%);
+}
+#icon-travel {
+  transform: translate(-60%, 100%);
+}
+#icon-game {
+  transform: translate(-50%, 200%);
+}
+#icon-bike {
+  transform: translate(50%, 0%);
+}
+
+
   .nav {
     margin-left: 60rem;
     background-color: #2B353E;
@@ -184,9 +194,6 @@ aside {
     width: 25%;
     transform: translate(0, 0);
   }
-  .hobbie-icon {
-
-  }
   .descricao-detalhe{
     padding-top: 30px;
   }
@@ -195,6 +202,9 @@ aside {
     margin-left: 50%;
     border-radius: 0;
     width: 60%;
+  }
+  #collapse-navbar {
+    width: 110%;
   }
   #collapse-navbar ul {
     margin-left: 30%;
