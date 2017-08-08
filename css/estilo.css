@@ -111,7 +111,7 @@ aside {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   body, html {
     min-height: 670px;
   }
@@ -203,16 +203,21 @@ aside {
     border-radius: 0;
     width: 60%;
   }
+
+
   #collapse-navbar {
     width: 110%;
   }
   #collapse-navbar ul {
     margin-left: 30%;
     margin-top: 3%;
+    border: none;
   }
-  #collapse-navbar ul li {
+  #collapse-navbar ul li a {
     margin-left: 6px;
-    border: 1px solid white;
+    background-color: #8F98A9;
+    border-bottom: none;
+
 }
 }
 
