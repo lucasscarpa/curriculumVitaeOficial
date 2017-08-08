@@ -6,20 +6,32 @@ body, html {
   font-family: Arial, serif;
   font-family: 'Raleway', sans-serif;
 }
+
 h1, h2{
   font-weight: bolder;
   font-size: 1.5rem;
+}
+p{
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 h2 {
   text-transform: uppercase;
   text-align: center;
 }
-h3 {
-  font-size: 1rem;
+p {
+  font-weight: bold;
+}
+section h4 {
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+section h5 {
+  margin-top: 5px;
+  font-weight: bold;
 }
 header {
   height: 50%;
-
 }
 aside {
   height: 50%;
@@ -30,6 +42,7 @@ aside {
   height: 40%;
 }
 .secao-corpo{
+ 
   height: 100%;
   border-top: 1px solid grey;
 }
@@ -45,14 +58,17 @@ aside {
   -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
   box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.75);
-  z-index: 3;
+
 }
 #info {
-  transform: translateY(-25%);
+  transform: translateY(-20%);
+  z-index: -1;
 }
 #collapse-navbar{
  background-color: #2B353E;
+ 
 }
+
 #experiencia-profissional {
   height: 210%;
 }
@@ -65,58 +81,105 @@ aside {
   border-bottom: 1px solid white;
   padding-bottom: 3%;
 }
-#info h1, #info p  {
+#info h1, #info h5  {
   text-align: center;
 }
 .rede-social img {
   padding: 5px;
 }
 
+#habilidades{
+  height: 110%;
+}
 
 
 
 
 
 @media (min-width: 992px) {
-.navbar {
-  background-color: #2B353E;
-}
-.navbar {
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h5{
+   font-size: 1.5rem;
+  }
+  .secao-corpo{
+    height: 80%;
+    display: none;
+  }
+  .secao-ativa{
+    display: block;
+  }
+  .hobbie-icon {
+    display: none;
+  }
+  .hobbie-ativo {
+    display: block;
+  }
+  .icons-hobbies{
+   margin-left: 50%;
+   transform: translateX(-12%);  
+ }
+ .nav {
+  margin-left: 60rem;
   background-color: #2B353E;
   height: 50%;
 }
-  .secao-corpo{
-    float: left;
-  }
-  .navbar {
-    margin: 0;
-  }
-  header {
-    background-color: #2B353E;
-    height: 10%;
-  }
-  aside{
-    float: left;
-    width: 360px;
-    height: 90%;
-    transform: translate(0,0);
-    position: relative;
-    color: white;
-    float: left;
-    background-color: #2B353E;
-  }
-  #info {
-  width: 400px;
-  transform: translateY(0);
+.navbar li{
+  border: 0px solid black;
 }
-#hobbies {
-  width: 400px;
+.navbar li a {
+  padding-bottom: 0;
+}
+.secao-corpo{
+  float: left;
+}
+.navbar {
+  margin-bottom: 0;
+  height: 10px;
+  border: 0px solid white;
+}
+header {
+  background-color: #2B353E;
+  height: 10%;
+}
+aside{
+  float: left;
+  width: 320px;
+  height: 90%;
+  transform: translate(0,0);
+  position: relative;
+  color: white;
+  float: left;
+  background-color: #2B353E;
+
+}
+#info h1, #info h5{
+  text-align: center;
+}
+#info p  {
+  text-align: left;
+}
+
+#info {
+  text-align: left;
+  width: 25%;
+  transform: translate(0, 0);
+}
+.hobbie-icon {
+
+}
+.descricao-detalhe{
+  padding-top: 30px;
 }
 #foto-principal {
-  width: 150px;
   border-radius: 100%;
   margin-left: 50%;
-  transform: translateX(-80%);
+  border-radius: 0;
+  width: 60%;
 
 }
 
