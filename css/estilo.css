@@ -20,9 +20,7 @@ h2 {
   text-transform: uppercase;
   text-align: center;
 }
-p {
-  font-weight: bold;
-}
+
 section h4 {
   font-weight: bolder;
   margin-bottom: 0;
@@ -47,7 +45,7 @@ aside {
   border-top: 1px solid grey;
 }
 .secao-corpo h2:first-child{
-  padding-bottom: 5%;
+  padding-bottom: 10px;
   border-bottom: 1px solid white;
 }
 #foto-principal {
@@ -114,25 +112,41 @@ aside {
 @media (min-width: 780px) {
   body, html {
     min-height: 670px;
+    max-width: 1544px;
+    margin:0;
+    width: 100%;
   }
-    h1{
-      font-size: 2.5rem;
-    }
-    h2{
-      font-size: 2rem;
-    }
-    h5{
-     font-size: 1.5rem;
-   }
-   .secao-corpo{
-    width: 60%;
-    height: 80%;
-    display: none;
+  h1{
+    font-size: 2.5rem;
   }
-  .secao-ativa{
-    display: block;
+  h2{
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 0;
   }
+  h5{
+   font-size: 1.5rem;
+ }
+ .navbar {
+  width: 100%;
+ }
+ .secao-corpo{
+  opacity: 0;
+  border: 0;
+  visibility: hidden;
+  transform: translate3d(0,-100px,0);
+  position: absolute;
+  top: 0;
 
+}
+.secao-ativa{
+  opacity: 1;
+  visibility: visible;
+  transition: 1s;
+  position: relative;
+  top: auto;
+  transform: translate3d(0,0,0);
+}
 
 #icon-cook {
   transform: translate(60%,100%);
@@ -146,77 +160,80 @@ aside {
 #icon-bike {
   transform: translate(50%, 0%);
 }
+#experiencia-profissional h2 {
+  padding-bottom: 10px;
+}
+#experiencia-profissional, #habilidades {
+  height: 60%;
+}
 
 
-  .nav {
-    margin-left: 60rem;
-    background-color: #2B353E;
-    height: 50%;
-  }
-  .navbar li{
-    border: 0px solid black;
-  }
-  .navbar li a {
-    padding-bottom: 0;
-  }
-  .secao-corpo{
-    float: left;
-  }
-  .navbar {
-    margin-bottom: 0;
-    height: 10px;
-    border: 0px solid white;
-  }
-  header {
-    background-color: #2B353E;
-    height: 10%;
-  }
-  aside{
-    float: left;
-    width: 320px;
-    height: 90%;
-    transform: translate(0,0);
-    position: relative;
-    color: white;
-    float: left;
-    background-color: #2B353E;
+header {
+  background-color: #2B353E;
+  height: 10%;
+  width: 100%;
+}
+.nav {
+  margin-left: 60rem;
 
-  }
-  #info h1, #info h5{
-    text-align: center;
-  }
-  #info p  {
-    text-align: left;
-  }
+  height: 15px;
+}
+.navbar li{
+  border: 0px solid black;
+}
 
-  #info {
-    text-align: left;
-    width: 25%;
-    transform: translate(0, 0);
-  }
-  .descricao-detalhe{
-    padding-top: 30px;
-  }
-  #foto-principal {
-    border-radius: 100%;
-    margin-left: 50%;
-    border-radius: 0;
-    width: 60%;
-  }
+.secao-corpo{
+  float: left;
+}
+.navbar {
+  margin-bottom: 0;
+  border: 0px solid white;
+}
+aside{
+  float: left;
+  width: 320px;
+  height: 100%;
+  transform: translate(0,0);
+  position: relative;
+  color: white;
+  float: left;
+  background-color: #2B353E;
 
+}
+#info h1, #info h5{
+  text-align: center;
+}
+#info p  {
+  text-align: left;
+}
 
-  #collapse-navbar {
-    width: 110%;
-  }
-  #collapse-navbar ul {
-    margin-left: 30%;
-    margin-top: 3%;
-    border: none;
-  }
-  #collapse-navbar ul li a {
-    margin-left: 6px;
-    background-color: #8F98A9;
-    border-bottom: none;
+#info {
+  text-align: left;
+  width: 25%;
+  transform: translate(0, 0);
+}
+.descricao-detalhe{
+  padding-top: 30px;
+}
+#foto-principal {
+  border-radius: 100%;
+  margin-left: 50%;
+  border-radius: 0;
+  width: 60%;
+}
+.navbar-collapse{
+margin-left: 50px;
+}
+
+#collapse-navbar ul {
+  margin-left: 30%;
+  margin-top: 3%;
+  border: none;
+}
+#collapse-navbar ul li a {
+  margin-left: 6px;
+  background-color: #8F98A9;
+  border-bottom: none;
 
 }
 }

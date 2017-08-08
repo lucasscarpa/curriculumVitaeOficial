@@ -14,7 +14,7 @@ if(tamanho < 768){
 
 $('#collapse-navbar').on('show.bs.collapse', function() {
   if(tamanho < 768 ){
-  $('aside').css('transform', 'translateY(30px');
+  $('aside').css('transform', 'translateY(50px');
     $('#hobbies').addClass('hobbies-hide');
  }
 });
