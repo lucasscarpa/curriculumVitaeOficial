@@ -262,3 +262,15 @@ aside{
   line-height:10px;
   color: black;
 }
+
+aside {
+  transition: 0.5s;
+}
+
+.hobbies-hide{
+  display: none;
+  transition: 0.3s;
+}
+  #collapse-navbar {
+    border: none;
+  }
