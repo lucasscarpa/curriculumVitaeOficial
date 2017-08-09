@@ -15,14 +15,14 @@ if(tamanho < 768){
 $('#collapse-navbar').on('show.bs.collapse', function() {
   if(tamanho < 768 ){
   $('aside').css('transform', 'translateY(50px');
-    $('#hobbies').addClass('hobbies-hide');
+    $('.secao-hobbies').addClass('hobbies-hide');
  }
 });
 
 $('#collapse-navbar').on('hide.bs.collapse', function() {
     if(tamanho < 768 ){
   $('aside').css('transform', 'translateY(-50%');
-  $('#hobbies').removeClass('hobbies-hide');
+  $('.secao-hobbies').removeClass('hobbies-hide');
 }
 });
 
