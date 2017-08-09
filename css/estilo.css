@@ -46,7 +46,7 @@ aside {
 }
 .secao-corpo h2:first-child{
   padding-bottom: 10px;
-  border-bottom: 1px solid white;
+
 }
 #foto-principal {
   width: 150px;
@@ -64,10 +64,7 @@ aside {
 }
 #collapse-navbar{
  background-color: #2B353E;
- 
 }
-
-
 .hobbie-icon {
   margin-top: 10%;
   height: 50px;
@@ -105,7 +102,61 @@ aside {
   opacity: 0;
 
 }
+.hobbie-icon {
+  width: 40px;
+  height: 40px;
+}
+.progress-bar{
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.progress{
+  background-color: #8F98A9;
+  opacity: 0.8;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);
+}
+.skills h3{
+  text-align: center;
+}
+.skills p{
+  font-weight: bolder;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.detalhe-titulo {
+  padding-right: 1%;
+}
+.detalhe-descricao {
+  padding-left: 1%;
+}
+.hobbie-icon {
+  margin-left: 50%;
+    transform: translateX(-50%);
+}
 
+@media (min-width: 768px) {
+.detalhe-titulo{
+  padding-left: 20%;
+  padding-right: 0;
+}
+.detalhe-descricao {
+  padding-left: 0;
+}
+.descricao-detalhe{
+  margin-left: 15%;
+}
+.hobbie-icon {
+  width: 90px;
+  height: 90px;
+}
+#hobbies {
+  margin-top: 6%;
+}
+}
 
 @media (min-width: 1024px) {
   body, html {
@@ -127,6 +178,16 @@ aside {
  }
  .navbar {
   width: 100%;
+}
+.hobbie-icon {
+  width: 60px;
+  height: 60px;
+}
+.detalhe-titulo{
+  padding-left: 0%;
+}
+.descricao-detalhe{
+  margin-left: 0%;
 }
 .secao-corpo{
   opacity: 0;
@@ -227,20 +288,15 @@ aside{
 .navbar-collapse{
   margin-left: 50px;
 }
-
-
 #collapse-navbar ul {
   margin-left: 27%;
   margin-top: 3%;
   border: none;
-
 }
 #collapse-navbar ul li{
  padding-right: 2rem;
-
- }
+}
 #collapse-navbar ul li a {
- 
   background-color: #8F98A9;
   border-bottom: none;
   color: #2B353E;
@@ -249,13 +305,10 @@ aside{
   transform: translateY(-40%);
   border-top-left-radius: 15%;
   border-top-right-radius: 10%;
-
 }
-
 #collapse-navbar ul li .botao-ativo{
   transform: translateY(-20%);
 }
-
 }
 
 
