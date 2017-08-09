@@ -41,7 +41,7 @@ aside {
   height: 40%;
 }
 .secao-corpo{
-  height: 100%;
+  margin-top: 25%;
   border-top: 1px solid grey;
 }
 .secao-corpo h2:first-child{
@@ -109,7 +109,7 @@ aside {
 }
 
 
-@media (min-width: 780px) {
+@media (min-width: 1024px) {
   body, html {
     min-height: 670px;
     max-width: 1544px;
@@ -129,14 +129,17 @@ aside {
  }
  .navbar {
   width: 100%;
- }
- .secao-corpo{
+}
+.secao-corpo{
   opacity: 0;
   border: 0;
   visibility: hidden;
-  transform: translate3d(0,-100px,0);
+  transform: translate3d(-100px,0,0);
   position: absolute;
   top: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100%;
 
 }
 .secao-ativa{
@@ -145,8 +148,10 @@ aside {
   transition: 1s;
   position: relative;
   top: auto;
+  padding-left: 3%;
   transform: translate3d(0,0,0);
 }
+
 
 #icon-cook {
   transform: translate(60%,100%);
@@ -174,7 +179,7 @@ header {
   width: 100%;
 }
 .nav {
-  margin-left: 60rem;
+  margin-left: 10rem;
 
   height: 15px;
 }
@@ -222,20 +227,37 @@ aside{
   width: 60%;
 }
 .navbar-collapse{
-margin-left: 50px;
+  margin-left: 50px;
 }
+
 
 #collapse-navbar ul {
-  margin-left: 30%;
+  margin-left: 27%;
   margin-top: 3%;
   border: none;
-}
-#collapse-navbar ul li a {
-  margin-left: 6px;
-  background-color: #8F98A9;
-  border-bottom: none;
 
 }
+#collapse-navbar ul li{
+ padding-right: 2rem;
+
+ }
+#collapse-navbar ul li a {
+ 
+  background-color: #8F98A9;
+  border-bottom: none;
+  color: #2B353E;
+  font-size: 1.2rem;
+  opacity: 1;
+  transform: translateY(-40%);
+  border-top-left-radius: 15%;
+  border-top-right-radius: 10%;
+
+}
+
+#collapse-navbar ul li .botao-ativo{
+  transform: translateY(-20%);
+}
+
 }
 
 

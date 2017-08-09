@@ -8,26 +8,40 @@ var secoes = document.querySelectorAll(".secao-corpo")
 var lista = document.querySelectorAll(".linkref");
 
 if(tela > 780){
-lista.forEach( function(element, index) {
-  element.addEventListener('click', function (e) {
-    e.preventDefault();
-    var href = this.getAttribute('href').substring(1);
-    secoes.forEach( function(element, index) {
-      var hrefSecao = element.getAttribute('id');
-      console.log(hrefSecao);
-                 if(element.classList.contains('secao-ativa') & hrefSecao != href){
-                    element.classList.remove('secao-ativa');
-                }else if(hrefSecao === href ){
-                  element.classList.add('secao-ativa');
-                }     
-    });
-  })
-});
+  lista.forEach( function(element, index) {
+    element.addEventListener('click', function (e) {
+      e.preventDefault();
+            
+    
+    for(var x=0; x<lista.length;x++){
+      var atual = lista[x];
+     
+      atual.classList.remove('botao-ativo')
+    }
+      
+      element.classList.add('botao-ativo');
+
+      
+
+      var href = this.getAttribute('href').substring(1);
+      secoes.forEach( function(element, index) {
+        var hrefSecao = element.getAttribute('id');
+
+        if(element.classList.contains('secao-ativa') & hrefSecao != href){
+          element.classList.remove('secao-ativa');
+        }else if(hrefSecao === href ){
+          element.classList.add('secao-ativa');
+
+        }
+
+      });
+    })
+  });
 }
 
 if(tela < 780){
-console.log('olaaaa');
-$("#collapse-navbar a").on('click', function(event) {
+
+  $("#collapse-navbar a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
