@@ -1,11 +1,14 @@
+
 body, html {
   height: 100%;
   width: 100%;
   max-width: 1326px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: #8F98A9;
   font-family: Arial, serif;
   font-family: 'Raleway', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Cuprum', sans-serif;
 }
 
 h1, h2{
@@ -23,10 +26,12 @@ h2 {
 
 section h4 {
   font-weight: bolder;
+  font-size: 1.5rem;  
   margin-bottom: 0;
 }
 section h5 {
-  margin-top: 5px;
+  font-size: 1.3rem;
+  margin-top: 3px;
   font-weight: bold;
 }
 header {
@@ -117,9 +122,18 @@ aside {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
 }
+#habilidades h3{
+  font-size: 2.5rem;
+}
+#telefone{
+  letter-spacing: 2px;
+}
+
 
 
 @media (min-width: 768px) {
+
+
   .detalhe-titulo{
     padding-left: 20%;
     padding-right: 0;
@@ -141,9 +155,54 @@ aside {
     margin-left: 30%;
     transform: translateX(-20%);
   }
-    .secao-corpo h2{
-      margin-top: 30px;
+  .secao-corpo h2{
+    margin-top: 30px;
   }
+}
+
+@media (max-width: 768px) {
+  /*-------------------------------------------------------------------------*/
+  /*                CRIANDO O BOTAO E REALIZANDO EFEITO DE FECHAR             */
+  /*--------------------------------------------------------------------------*/
+.mobile-btn {
+    display: block;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-top: 4px solid;
+    margin: 20px 20px 0 0;
+    float: right;
+    position: relative;
+    cursor: pointer;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .mobile-btn::after, .mobile-btn::before {
+    content: '';
+    display: block;
+    height: 4px;
+    margin-top: 6px;
+    background: currentColor;
+    position: relative;
+    transition: transform .2s ease;
+  }
+
+  .mobile-btn.active {
+    border-top-color: transparent;
+  }
+
+  .mobile-btn.active::after {
+    margin-top: 0px;
+    top: 2px;
+    transform: rotate(45deg);
+  }
+
+  .mobile-btn.active::before {
+    margin-top: 0px;
+    top: 6px;
+    transform: rotate(135deg);
+  }
+
 }
 
 @media (min-width: 1025px) {
@@ -164,12 +223,12 @@ aside {
   h5{
    font-size: 1.5rem;
  }
-  header {
+ header {
   background-color: #2B353E;
   height: 10%;
   width: 100%;
 }
- .navbar {
+.navbar {
   width: 100%;
 }
 .hobbie-icon {
@@ -290,7 +349,7 @@ aside{
   border-top-left-radius: 15%;
   border-top-right-radius: 10%;
 }
-                  
+
 #collapse-navbar ul li .botao-ativo{
   transform: translateY(-20%);
   color: black;
@@ -303,6 +362,11 @@ aside{
 }
 
 }
+
+
+
+
+
 
 
 
