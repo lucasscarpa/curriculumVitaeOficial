@@ -97,7 +97,12 @@ aside {
   border-top: 1px solid grey;
 }
 .secao-corpo h2 {
+    margin-top: 30px;
   padding-bottom: 10px;
+}
+.secao-corpo p {
+  text-indent: 15px ;
+  text-align: justify;
 }
 .progress-bar{
   border-radius: 10px;
@@ -124,11 +129,9 @@ aside {
 #telefone{
   letter-spacing: 2px;
 }
-
 .detalhes {
   padding-left: 10px;
 }
-
 @media (min-width: 758px) {
 
   .detalhe-titulo{
@@ -145,16 +148,11 @@ aside {
     width: 90px;
     height: 90px;
   }
-  #titulo-hobbies{
-    margin-top: 6%;
-  }
   .secao-corpo{
     margin-left: 30%;
     transform: translateX(-20%);
   }
-  .secao-corpo h2{
-    margin-top: 30px;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -289,11 +287,11 @@ aside {
 .secao-ativa{
   opacity: 1;
   visibility: visible;
-  transition: 1s;
   position: relative;
-  top: auto;
   padding-left: 3%;
+  padding-right: 3%;
   transform: translate3d(0,0,0);
+  transition: 1s;
 }
 #icon-cook {
   transform: translate(60%,100%);
@@ -314,7 +312,6 @@ aside {
 #experiencia-profissional h2 {
   padding-bottom: 10px;
 }
-
 .nav {
   margin-left: 5rem;
   height: 15px;
@@ -322,11 +319,6 @@ aside {
 .navbar li{
   border: 0px solid black;
 }
-
-.secao-corpo{
-
-}
-
 aside{
   float: left;
   width: 23%;
@@ -376,16 +368,18 @@ aside{
   color: #2B353E;
   font-size: 1.2rem;
   opacity: 1;
-  transform: translateY(-40%);
-  border-top-left-radius: 15%;
-  border-top-right-radius: 10%;
+  transform: translateY(-5%);
+  border-top-left-radius: 20%;
+  border-top-right-radius: 20%;
+  letter-spacing: 0.2rem;
+  border-top: 2px solid white;
+-webkit-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.50);
+-moz-box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.50);
+box-shadow: 0px -10px 10px 0px rgba(0,0,0,0.50);
 }
 
 #collapse-navbar ul li .botao-ativo{
-  transform: translateY(-20%);
-  color: black;
-  font-weight: bolder;
-  letter-spacing: 0.2rem;
+  transform: translateY(6%);
 }
 .progress-bar {
   text-align: left;
