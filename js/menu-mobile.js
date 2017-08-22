@@ -17,14 +17,15 @@ if(tamanho < 768){
 
 $('#collapse-navbar').on('show.bs.collapse', function() {
   if(tamanho < 768 ){
-  $('aside').css('transform', 'translateY(40px');
+  $('aside').css('transform', 'translateY(2%');
     $('.secao-hobbies').addClass('hobbies-hide');
  }
+
 });
 
 $('#collapse-navbar').on('hide.bs.collapse', function() {
     if(tamanho < 768 ){
-  $('aside').css('transform', 'translateY(-40%');
+  $('aside').css('transform', 'translateY(-50%');
   $('.secao-hobbies').removeClass('hobbies-hide');
 }
 });
